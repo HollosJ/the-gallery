@@ -1,1 +1,1 @@
-var colc=new Colcade(".grid",{columns:".grid-col",items:".grid-item"});
+var colc=new Colcade(".grid",{columns:".grid-col",items:".grid-item"});const imgs=document.querySelectorAll(".image");let modal=document.querySelector(".img-modal"),modalImg=document.querySelector(".img-modal-content");imgs.forEach(e=>{e.addEventListener("click",e=>{modalImg.src=e.target.src,modal.classList.toggle("open")})}),modal.addEventListener("click",e=>{e.target.classList.contains("img-modal")&&modal.classList.toggle("open")});
